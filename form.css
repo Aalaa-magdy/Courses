@@ -9,6 +9,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border-radius: 7px;
 }
 .signin{
   height:30rem;

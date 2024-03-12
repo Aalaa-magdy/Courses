@@ -456,3 +456,10 @@ footer ul li a:hover{
     }
   }
 }
+.bxs-user-circle{
+  font-size: 1.8rem;
+  color:white;
+}
+.bxs-user-circle:hover{
+  color: #c70e58db;
+}

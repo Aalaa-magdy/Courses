@@ -1,3 +1,4 @@
+
 let firstName = document.getElementById("first-name");
 let lastName = document.getElementById("last-name");
 let emailInput = document.getElementById("email");
@@ -84,6 +85,24 @@ confirm.addEventListener("blur", function () {
     confirmPass = true;
   }
 });
+function upDateHeader() {
+  let head = document.querySelectorAll(".login");
+  head[1].innerHTML = `Log Out`;
+  head[1].addEventListener("click", function () {
+    returnHeader();
+  });
+  head[0].innerHTML = `Profile`;
+  head[0].href = "profile.html";
+  localStorage.setItem("Found", true);
+}
+function returnHeader() {
+  let head = document.querySelectorAll(".login");
+  head[0].innerHTML = "Sing In";
+  head[0].href = "signin.html";
+  head[1].innerHTML = "Sing Up";
+  head[1].href = "signup.html";
+  localStorage.removeItem("Found");
+}
 
 // sign up page
 function addStudent() {
@@ -95,6 +114,8 @@ function addStudent() {
       cart:[],
     };
     students.push(student);
-    updateLocalStorage();
+     updateLocalStorage();
+     localStorage.setItem("numOfUser",students.length-1);
+    upDateHeader();
   }
 }

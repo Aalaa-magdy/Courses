@@ -45,12 +45,12 @@ function login() {
 // localStorage.removeItem("cart");
 function upDateHeader() {
   let head = document.querySelectorAll(".login");
-  head[0].innerHTML = `Log Out`;
-  head[0].addEventListener("click", function () {
+  head[1].innerHTML = `Log Out`;
+  head[1].addEventListener("click", function () {
     returnHeader();
   });
-  head[1].innerHTML = `Profile`;
-  head[1].href = "profile.html";
+  head[0].innerHTML = `Profile`;
+  head[0].href = "profile.html";
   localStorage.setItem("Found", true);
 }
 function checkPossible(i) {
@@ -62,11 +62,6 @@ function checkPossible(i) {
     window.alert("Login fist ,please");
   }
 }
-
-if (found) {
-  upDateHeader();
-}
-
 function returnHeader() {
   let head = document.querySelectorAll(".login");
   head[0].innerHTML = "Sing In";
@@ -76,23 +71,38 @@ function returnHeader() {
   localStorage.removeItem("Found");
 }
 
-function showProfile() {
+if (found) {
+  upDateHeader();
+}
+ function showProfile() {
   let profile = document.getElementById("access");
-  profile.innerHTML = "";
+  profile.innerHTML='';
+  profile.classList.add("course-box");
+  profile.innerHTML = '';
   for (let i = 0; i < students[numOfUser].cart.length; i++) {
-    let con = document.createElement("div");
-    con.innerHTML = students[numOfUser].cart[i];
-    con.classList.add("exe");
-    con.classList.add("course-con");
-    profile.appendChild(con);  
+  let xx=document.createElement("div");
+  xx.innerHTML= students[numOfUser].cart[i];
+  xx.removeChild(xx.lastElementChild);
+  xx.classList.add("course-con");
+  let ss=document.createElement("button");
+  ss.classList.add("over");
+  ss.classList.add("btn");
+  ss.onclick= function(){
+  xx.remove();
+  removeCourse(i);
+  };
+  ss.textContent="Remove";
+  
+  xx.appendChild(ss);
+  profile.appendChild(xx);
+  // console.log(xx.innerHTML);
   }
-      let edit = document.querySelectorAll(".exe .over");
-      for(let i=0;i<edit.length;i++){
-        edit[i].textContent="Remove";
-        edit[i].addEventListener("click",function(){
-        
-        })
-      }
+  
 }
 
 showProfile();
+
+function removeCourse(i){
+  students[numOfUser].cart.splice(i,1);
+  updateLocalStorage();
+}
