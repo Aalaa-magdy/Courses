@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="form.css">
-
-    <title>Sign Up</title>
-  </head>
-  <body>
-    <!-- header -->
-    <header>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="courses.css">
+    <title>Document</title>
+</head>
+<body>
+     <header>
       <div class="logo">
         <img src="images/laptop.png" alt="" />
         <a href>PenCil..</a>
@@ -23,36 +22,19 @@
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="courses.html">Courses</a>
-        <a href="signin.html" class="login">sign in</a>
-        <a href="signup.html" class="login">sign up</a>
+        <a href="index.html" class="login">Log out</a>
+        <a href="profile.html" class="login">Profile</a>
       </nav>
       <button class="fas fa-bars" id="menu" onclick="showMenu()"></button>
     </header>
-     <main>
-     <h1 class="title">Sign Up and Start Learning :</h1>
-     <div class="form">
-        <input type="email" id="email"placeholder="Email" >
-        <p id="emailError"></p>
-          <br>
 
-        <input type="text" id="first-name" placeholder="First Name">
-        <p id="firstError"></p>
-          <br>
+     <section >
+       <div id="access" class="courses-box">
 
-        <input type="text" id="last-name"placeholder="Last Name">
-        <p id="lastError"></p>
-       <br>
-        <input type="password" id="pass" placeholder="Password">
-        <p id="passError"></p>
+       </div>
+     </section>
 
-        <br>
-        <input type="password" id="confirm"placeholder="Confirm Password">
-        <p id="confirmError"></p>
 
-          <br/><br/>
-        <button class="" onclick="addStudent()">Sign Up</button>
-     </div>
-     </main>
     <footer>
       <div class="container">
         <div class="footer1">
@@ -114,8 +96,6 @@
         <small>copyright &copy; PENCIL Youtube Totorial</small>
       </div>
     </footer>
-    <script src="register.js" >
-       
-    </script>
-  </body>
+    <script src="login.js"></script>
+</body>
 </html>

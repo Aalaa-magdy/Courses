@@ -8,7 +8,7 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="form.css" />
 
     <title>Sign Up</title>
   </head>
@@ -28,20 +28,22 @@
       </nav>
       <button class="fas fa-bars" id="menu" onclick="showMenu()"></button>
     </header>
-     <main class="signin">
-     <h1 class="title">Login :</h1>
-     <form action="">
-        <input type="email" id="email"placeholder="Email">
-          <br>
-        <input type="password" id="pass" placeholder="Password">
-     
-          <br>
+    <main class="signin">
+      <h1 class="title">Login :</h1>
+      <div class="form">
+        <input type="email" id="lemail" placeholder="Email" />
+        <br />
+        <input type="password" id="lpass" placeholder="Password" />
+
+        <p id="either"></p>
+        <br /><br />
         <button class="" onclick="login()">Sign in</button>
-     </form>
-     <div>
-     <a href="signup.html">Don't have account</a>
-     </div>
-     </main>
+        <br /><br />
+      </div>
+      <div>
+        <a href="signup.html">Don't have account</a>
+      </div>
+    </main>
     <footer>
       <div class="container">
         <div class="footer1">
@@ -103,6 +105,8 @@
         <small>copyright &copy; PENCIL Youtube Totorial</small>
       </div>
     </footer>
-    <script src="main.js"></script>
+    <script src="login.js">
+    
+    </script>
   </body>
 </html>

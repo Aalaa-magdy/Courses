@@ -12,11 +12,11 @@ main {
 }
 .signin{
   height:30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.signin div{
-  margin-top: 1.6rem;
-  margin-left:9.3rem;
-}
+
 .signin div a{
  font-size: 1.15rem;
  text-align: center;
@@ -26,7 +26,7 @@ main {
    letter-spacing: 0.8px;
 }
 main button {
-  background-color: #c32665db;
+  background-color: #c70e58db;
   color: #ffff;
   font-size: 2rem;
   text-align: center;
@@ -39,7 +39,7 @@ main button {
   cursor: pointer;
 }
 main button:hover{
-  background-color:#c7497bec ;
+  background-color:#d44c82ec ;
 }
 .title {
   margin-top: -2rem;
@@ -61,7 +61,7 @@ input::placeholder {
   font-size: 1.5rem;
   /* padding:1rem; */
 }
-form p{
+.form p{
   color:#c3265ddb ;
   font-size: 1.1rem;
 }
