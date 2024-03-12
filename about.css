@@ -1,0 +1,130 @@
+.achievement {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  gap: 10rem;
+  margin-left: 8rem;
+}
+.left-ach img {
+  width: 50rem;
+}
+.right-ach {
+  display: flex;
+  flex-direction: column;
+}
+.above h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #fbfbfb;
+  text-shadow: rgba(200, 25, 133, 0.87);
+}
+.above p {
+  color: #ffffffaa;
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+.below {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+}
+.card {
+  width: 10rem;
+  height: 12rem;
+  text-align: center;
+  background: #253968;
+  padding: 0.8rem;
+  border-radius: 10px;
+  border:2px solid #3d60b1cf;
+
+}
+.card:hover{
+  transform: scale(1.04);
+}
+.card img {
+  margin-bottom: 1rem;
+  padding: 0.6rem;
+  border-radius: 10px;
+}
+.card h2 {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+.card p {
+  font-size: 1.2rem;
+}
+.below :nth-child(1) img {
+  background: #f13d5a;
+}
+
+.below :nth-child(2) img {
+  background: rgb(43, 227, 230);
+}
+
+.below :nth-child(3) img {
+  background: rgb(232, 223, 59);
+}
+.team {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: -8rem;
+  margin-bottom: 8rem;
+}
+.team-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4rem;
+}
+.teacher {
+  width: 17rem;
+  height: 19rem;
+  background: #253968;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+  border-radius: 7px;
+  border: 1px solid #33477c;
+  overflow: hidden;
+  position: relative;
+}
+.teacher img {
+  width: 12rem;
+  height: 11rem;
+  border-radius: 7px;
+  filter: grayscale(90%);
+}
+.teacher:hover {
+  background: #04102e;
+}
+.teacher:hover img {
+  filter: grayscale(0);
+}
+.overlay {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 2.7rem;
+  height: 8.8rem;
+  background: #1f315a;
+  left: 20rem;
+  bottom: 5.5rem;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: 0.5s ease;
+}
+.teacher:hover .overlay{
+   left: 14.4rem;
+  bottom: 5.7rem;
+}
+.teacher .overlay i{
+  font-size:1.7rem;
+  margin-bottom: 0.7rem;
+
+}

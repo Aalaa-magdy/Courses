@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="form.css">
+
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="logo">
+        <img src="images/laptop.png" alt="" />
+        <a href>PenCil..</a>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="courses.html">Courses</a>
+        <a href="signin.html" class="login">sign in</a>
+        <a href="signup.html" class="login">sign up</a>
+      </nav>
+      <button class="fas fa-bars" id="menu" onclick="showMenu()"></button>
+    </header>
+     <main>
+     <h1 class="title">Sign Up and Start Learning :</h1>
+     <form action="">
+        <input type="email" id="email"placeholder="Email" >
+        <p id="emailError"></p>
+          <br>
+
+        <input type="text" id="first-name" placeholder="First Name">
+        <p id="firstError"></p>
+          <br>
+
+        <input type="text" id="last-name"placeholder="Last Name">
+        <p id="lastError"></p>
+       <br>
+        <input type="password" id="pass" placeholder="Password">
+        <p id="passError"></p>
+
+        <br>
+        <input type="password" id="confirm"placeholder="Confirm Password">
+        <p id="confirmError"></p>
+
+          <br>
+        <button class="" onclick="addStudent()">Sign Up</button>
+     </form>
+     </main>
+    <footer>
+      <div class="container">
+        <div class="footer1">
+          <a href="index.html" class="footr-logo"><h4>Pencil</h4></a>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Praesentium, exercitationem.
+          </p>
+        </div>
+        <div class="footer2">
+          <h4>permaLinks</h4>
+          <ul class="permalink">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer3">
+          <h4>privacy</h4>
+          <ul class="privacy">
+            <li><a href="">Privacy policy</a></li>
+            <li><a href="">Terms and conditions</a></li>
+            <li><a href="">Refund policy</a></li>
+          </ul>
+        </div>
+        <div class="foootr4">
+          <h4>Contact Us</h4>
+          <div>
+            <p>+012 7893 4389</p>
+            <br />
+            <p>shakir36@gmail.com</p>
+          </div>
+          <ul class="footer-social">
+            <li>
+              <a href="">
+                <i class="bx bxl-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="bx bxl-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="bx bxl-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="bx bxl-linkedin-square"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-copy">
+        <small>copyright &copy; PENCIL Youtube Totorial</small>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- CSS Swiper -->
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
+    <title>Public Service Center</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="logo">
+        <img src="images/laptop.png" alt="">
+        <a href>PenCil..</a>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="courses.html">Courses</a>
+        <a href="signin.html" class="login">sign in</a>
+        <a href="signup.html" class="login">sign up</a>
+      </nav>
+      <button class="fas fa-bars" id="menu" onclick="showMenu()"></button>
+    </header>
+
+    <!-- home -->
+    <section class="home" id="home">
+      <div class="details">
+        <h1>Grow Your Skills to Advance <br />Your Career path</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+          molestias, sint doloribus modi mollitia dolorum dolorem, quisquam,
+          deserunt quidem aliquid quos provident tenetur? Animi autem excepturi
+          a magni, possimus veniam.
+        </p>
+        <button class="btn">Get Started</button>
+      </div>
+      <img src="images/mainmain.png" alt="" />
+    </section>
+
+    <!-- categories -->
+    <section class="categories" id="categories">
+      <div class="cat-left">
+        <h1>Categories</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur <br />
+          adipisicing elit. Alias nesciunt consequuntur deleniti <br />
+          rerum sunt eius dolorem cupiditate aperiam excepturi blanditiis!
+        </p>
+        <button class="btn">Learn More</button>
+      </div>
+      <div class="cat-right">
+        <div class="cat">
+          <img src="images/ps.jpeg" />
+          <h2>image name</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nulla
+            , obcaecati vitae eius ratione accusamus culpa eaque saepe molestiae
+            sit.
+          </p>
+        </div>
+        <div class="cat">
+          <img src="images/ps.jpeg" />
+          <h2>image name</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nulla
+            , obcaecati vitae eius ratione accusamus culpa eaque saepe molestiae
+            sit.
+          </p>
+        </div>
+        <div class="cat">
+          <img src="images/ps.jpeg" />
+          <h2>image name</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nulla
+            , obcaecati vitae eius ratione accusamus culpa eaque saepe molestiae
+            sit.
+          </p>
+        </div>
+        <div class="cat">
+          <img src="images/ps.jpeg" />
+          <h2>image name</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nulla
+            , obcaecati vitae eius ratione accusamus culpa eaque saepe molestiae
+            sit.
+          </p>
+        </div>
+        <div class="cat">
+          <img src="images/ps.jpeg" />
+          <h2>image name</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nulla
+            , obcaecati vitae eius ratione accusamus culpa eaque saepe molestiae
+            sit.
+          </p>
+        </div>
+        <div class="cat">
+          <img src="images/ps.jpeg" />
+          <h2>image name</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nulla
+            , obcaecati vitae eius ratione accusamus culpa eaque saepe molestiae
+            sit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--courses-->
+    <section class="courses" id="cources">
+      <h1 class="title">Our Popular <span>Courses</span></h1>
+
+      <div class="cources-box">
+        <div class="course">
+          <img src="images/c4.jpg" alt="" />
+          <h2>Course 1</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eum
+            eligendi officiis Sapiente at nostrum corporis deleniti quas a
+            laudantium.
+          </p>
+          <button>Learn More</button>
+        </div>
+        <div class="course">
+          <img src="images/c2.jpg" alt="" />
+          <h2>Course 1</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eum
+            eligendi officiis Sapiente at nostrum corporis deleniti quas a
+            laudantium.
+          </p>
+          <button>Learn More</button>
+        </div>
+        <div class="course">
+          <img src="images/c3.jpg" alt="" />
+          <h2>Course 1</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eum
+            eligendi officiis Sapiente at nostrum corporis deleniti quas a
+            laudantium.
+          </p>
+          <button>Learn More</button>
+        </div>
+      </div>
+    </section>
+
+    <!--questions-->
+    <section class="questions">
+      <h1 class="title">Frequently Asked <span>Questions</span></h1>
+
+      <div class="question-box">
+        <div class="question">
+          <div class="ask">
+            <button id="add" onclick="more(0)">+</button>
+            <h3 id="first">What will you gain when you join to us?</h3>
+          </div>
+        </div>
+        <div class="question">
+          <div class="ask">
+            <button id="add" onclick="more(1)">+</button>
+            <h3 id="first">What will you gain when you join to us?</h3>
+          </div>
+        </div>
+        <div class="question">
+          <div class="ask">
+            <button id="add" onclick="more(2)">+</button>
+            <h3 id="first">What will you gain when you join to us?</h3>
+          </div>
+        </div>
+        <div class="question">
+          <div class="ask">
+            <button id="add" onclick="more(3)">+</button>
+            <h3 id="first">What will you gain when you join to us?</h3>
+          </div>
+        </div>
+        <div class="question">
+          <div class="ask">
+            <button id="add" onclick="more(4)">+</button>
+            <h3 id="first">What will you gain when you join to us?</h3>
+          </div>
+        </div>
+        <div class="question">
+          <div class="ask">
+            <button id="add" onclick="more(5)">+</button>
+            <h3 id="first">What will you gain when you join to us?</h3>
+          </div>
+        </div>
+        <div class="question">
+          <div class="ask">
+            <button id="add" onclick="more(6)">+</button>
+            <h3 id="first">What will you gain when you join to us?</h3>
+          </div>
+        </div>
+        <div class="question">
+          <div class="ask">
+            <button id="add" onclick="more(7)">+</button>
+            <h3 id="first">What will you gain when you join to us?</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- our students-->
+    
+    <section class="students">
+      <h1 class="title">Student's <span>Testimonials</span></h1>
+      <div class="gallery-wrapper">
+      <img src="images/back.png"alt=""id="backBtn">
+    <div class="gallery">
+      <div class="slides">
+       <div class="person-content">
+         <div class="person-image">
+            <img src="images/stu2.jpg" alt="">
+            <h2 style="text-align: center;">Sarah</h2>
+          </div>
+         <div class="person-info">
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione alias ut
+               fugit suscipit omnis blanditiis minima dolore qui distinctio, 
+               possimus exercitationem ipsam dicta magni accusamus repellat voluptates quis magnam numquam.</p>
+         </div>
+       </div>
+        <div class="person-content">
+         <div class="person-image">
+            <img src="images/stu6.jpg" alt="">
+            <h2 style="text-align: center;">David</h2>
+          </div>
+         <div class="person-info">
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione alias ut
+               fugit suscipit omnis blanditiis minima dolore qui distinctio, 
+               possimus exercitationem ipsam dicta magni accusamus repellat voluptates quis magnam numquam.</p>
+         </div>
+       </div>
+        <div class="person-content">
+         <div class="person-image">
+            <img src="images/stu5.jpg" alt="">
+            <h2 style="text-align: center;">Monica</h2>
+          </div>
+         <div class="person-info">
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione alias ut
+               fugit suscipit omnis blanditiis minima dolore qui distinctio, 
+               possimus exercitationem ipsam dicta magni accusamus repellat voluptates quis magnam numquam.</p>
+         </div>
+       </div>
+     </div>
+     <div class="slides">
+       <div class="person-content">
+         <div class="person-image">
+            <img src="images/stu4.jpg" alt="">
+            <h2 style="text-align: center;">Nagiba</h2>
+          </div>
+         <div class="person-info">
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione alias ut
+               fugit suscipit omnis blanditiis minima dolore qui distinctio, 
+               possimus exercitationem ipsam dicta magni accusamus repellat voluptates quis magnam numquam.</p>
+         </div>
+       </div>
+        <div class="person-content">
+         <div class="person-image">
+            <img src="images/stu3.jpg" alt="">
+            <h2 style="text-align: center;">afreqe</h2>
+          </div>
+         <div class="person-info">
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione alias ut
+               fugit suscipit omnis blanditiis minima dolore qui distinctio, 
+               possimus exercitationem ipsam dicta magni accusamus repellat voluptates quis magnam numquam.</p>
+         </div>
+       </div>
+        <div class="person-content">
+         <div class="person-image">
+            <img src="images/stu1.jpg" alt="">
+            <h2 style="text-align: center;">tyam</h2>
+          </div>
+         <div class="person-info">
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione alias ut
+               fugit suscipit omnis blanditiis minima dolore qui distinctio, 
+               possimus exercitationem ipsam dicta magni accusamus repellat voluptates quis magnam numquam.</p>
+         </div>
+       </div>
+     </div>
+    </div>
+    <img src="images/next.png"alt=""id="nextBtn">
+     </div>
+    </section>
+    <!-- footr -->
+    <footer>
+      <div class="container">
+        <div class="footer1">
+          <a href="index.html" class="footr-logo"><h4>Pencil</h4></a>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, exercitationem.</p>
+        </div>
+        <div class="footer2">
+          <h4>permaLinks</h4>
+          <ul class="permalink">
+             <li><a href="index.html">Home</a></li>
+             <li><a href="about.html">About</a></li>
+             <li><a href="courses.html">Courses</a></li>
+             <li><a href="contact.html">Contact</a></li>
+          </ul>
+
+        </div>
+          <div class="footer3">
+          <h4>privacy</h4>
+          <ul class="privacy">
+             <li><a href="">Privacy policy</a></li>
+             <li><a href="">Terms and conditions</a></li>
+             <li><a href="">Refund policy</a></li>
+          </ul>
+        </div>
+        <div class="foootr4">
+          <h4>Contact Us</h4>
+          <div>
+            <p>+012 7893 4389</p>
+            <br>
+            <p>shakir36@gmail.com</p>
+          </div>
+          <ul class="footer-social">
+                <li>
+                  <a href="">
+                    <i class='bx bxl-facebook'></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class='bx bxl-instagram'></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class='bx bxl-twitter'></i>
+                  </a>
+                </li>
+                 <li>
+                  <a href="">
+                    <i class='bx bxl-linkedin-square'></i>
+                  </a>
+                </li>
+          </ul>
+        </div>
+      </div>
+        <div class="footer-copy">
+          <small>copyright &copy; PENCIL Youtube Totorial</small>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
